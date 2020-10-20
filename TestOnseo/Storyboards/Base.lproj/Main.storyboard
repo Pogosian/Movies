@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Privacy Policy View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PrivacyPolicyViewController" id="BYZ-38-t0r" customClass="PrivacyPolicyViewController" customModule="TestOnseo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DF-nx-N8a">
+                                <rect key="frame" x="10" y="54" width="50" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.64978045230000003" green="0.61016947030000002" blue="0.46700787539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressCancelButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="juo-2c-o4Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please complete the Crown Sydney Acknowledgement" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S3d-jC-fjj">
+                                <rect key="frame" x="37" y="116" width="340" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="black" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Wm-iF-RFU">
+                                <rect key="frame" x="10" y="199" width="394" height="491.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign to acknowledge that you agree" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Pa-bI-TMW">
+                                <rect key="frame" x="62.5" y="720.5" width="289.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSE-5w-Ysy">
+                                <rect key="frame" x="50" y="772" width="314" height="40"/>
+                                <color key="backgroundColor" red="0.64978045230000003" green="0.61016947030000002" blue="0.46700787539999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="WUa-zn-p6G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Agree and continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressAgreeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWR-DF-8Ln"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="backgroundVC"/>
+                        <constraints>
+                            <constraint firstItem="S3d-jC-fjj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4Ty-qa-Aau"/>
+                            <constraint firstItem="S3d-jC-fjj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="7oe-1Q-v0m"/>
+                            <constraint firstItem="4Pa-bI-TMW" firstAttribute="top" secondItem="5Wm-iF-RFU" secondAttribute="bottom" constant="30" id="DaM-at-JiV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5Wm-iF-RFU" secondAttribute="trailing" constant="10" id="E40-OU-ztn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sSE-5w-Ysy" secondAttribute="trailing" constant="50" id="KiN-9K-Mq9"/>
+                            <constraint firstItem="4Pa-bI-TMW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TDA-Rv-mqz"/>
+                            <constraint firstItem="4DF-nx-N8a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="TQZ-Ah-Ppn"/>
+                            <constraint firstItem="sSE-5w-Ysy" firstAttribute="top" secondItem="4Pa-bI-TMW" secondAttribute="bottom" constant="30" id="YnK-d9-Gtv"/>
+                            <constraint firstItem="4Pa-bI-TMW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="cbY-Z8-uXn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sSE-5w-Ysy" secondAttribute="bottom" constant="50" id="ctq-lP-mCz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Pa-bI-TMW" secondAttribute="trailing" constant="10" id="fK5-d4-3ac"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4DF-nx-N8a" secondAttribute="trailing" constant="10" id="iEj-HD-JqD"/>
+                            <constraint firstItem="4DF-nx-N8a" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="k9I-QG-wNf"/>
+                            <constraint firstItem="S3d-jC-fjj" firstAttribute="top" secondItem="4DF-nx-N8a" secondAttribute="bottom" constant="30" id="kOa-lw-h0L"/>
+                            <constraint firstItem="5Wm-iF-RFU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="oUh-1j-dj3"/>
+                            <constraint firstItem="sSE-5w-Ysy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="s2Q-Fc-udq"/>
+                            <constraint firstItem="5Wm-iF-RFU" firstAttribute="top" secondItem="S3d-jC-fjj" secondAttribute="bottom" constant="30" id="shP-de-zI4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="S3d-jC-fjj" secondAttribute="trailing" constant="10" id="zH4-Bt-ssy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="agreeButton" destination="sSE-5w-Ysy" id="3Ol-Dy-buV"/>
+                        <outlet property="placeholderButtonLabel" destination="4Pa-bI-TMW" id="8Qw-Rx-Jtn"/>
+                        <outlet property="textView" destination="5Wm-iF-RFU" id="cfK-wX-2S6"/>
+                        <outlet property="titleLabel" destination="S3d-jC-fjj" id="35B-bb-xSO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="backgroundVC">
+            <color red="0.90588235294117647" green="0.90196078431372551" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>
